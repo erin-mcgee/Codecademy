@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+
+
+<head>
+  <title>Guide to CSS: Selectors </title>
+  <link href="./styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="main-title">Guide to CSS: Selectors</h1>
+  <h4 class="name">For Erin, By Erin </h4>
+  <p id="Table-of-Contents">
+    <a href="#Overview">Overview</a> &ensp; 
+    <a href="#Linking-CSS-HTML">Linking CSS and HTML Files</a> &ensp; 
+    <a href="#Chaining-Selectors">Chaining Selectors</a> &ensp; 
+    <a href="#Nested-Elements">Nested Elements</a></p>
+  <div id="Overview">
+  <h3 class="title"><em>Overview</em></h3>
+    <p>CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.</p>
+  <p>CSS can select HTML elements by tag, class, or ID.</p>
+  <p>Multiple CSS classes can be applied to one HTML element.</p>
+  <p>Classes can be reusable, while IDs can only be used once.</p>
+  <p>IDs are more specific than classes, and classes are more specific than tags. That means IDs will override any styles from a class, and classes will override any styles from a tag selector.</p>
+  <p>Multiple selectors can be chained together to select an element. This raises the specificity, but can be necessary.</p>
+  <p>Nested elements can be selected by separating selectors with a space.</p>
+  <p>The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.</p>
+  <p>Multiple unrelated selectors can receive the same styles by separating the selector names with commas.</p>
+  </div>
+  <div id="Linking-CSS-HTML">
+  <h3 class="title"><em>Linking CSS and HTML Files</em></h3>
+  <p>You can use the &lt;link&gt; element to link HTML and CSS files together. The &lt;link&gt; element must be placed within the head of the HTML file. It is a self-closing tag and requires the following three attributes:</p>
+  <table border="1" class="table1">
+    <thead class="tablehead1">
+      <td></td>
+      <td>Description</td>
+      <td>Example</td>
+    </thead>
+      <tr> <!--First Row-->
+        <td><strong>href</strong></td>
+      <td>Like the anchor element, the value of this attribute must be the address, or path, to the CSS file.</td>
+        <td>href="./styles.css"</td>
+    </tr>
+    <tr> <!--Second Row-->
+      <td><strong>type</strong></td>
+      <td>This attribute describes the type of document that you are linking to (in this case, a CSS file). The value of this attribute should be set to text/css.</td>
+      <td>type="text/css"</td>
+    </tr>
+    <tr> <!--Third Row-->
+      <td><strong>rel</strong></td>
+      <td>This attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.</td>
+      <td>rel="stylesheet"</td>
+    </tr>
+  </table>
+  <p>When linking an HTML file and a CSS file together, the &lt;link&gt; element will look like the following:</p>
+  <p class="example">&lt;link href="https://www.codecademy.com/stylesheets/style.css" type="text/css" rel="stylesheet"&gt;</p>
+  </div>
+  <div id="Chaining-Selectors">
+  <h3 class="title"><em>Chaining Selectors</em></h3>
+  <p>When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.</p>
+  <p>This is done by combining multiple selectors, which we will refer to as chaining. For instance, if there was a .special class for h1 elements, the CSS would look like:</p>
+  <p class="example">h1.special {<br>
+  }</p>
+  <p>The code above would select only the h1 elements that have a class of special. If a p element also had a class of special, the rule in the example would not style the paragraph.</p>
+  </div>
+  <div id="Nested-Elements">
+  <h3 class="title"><em>Nested Elements</em></h3>
+  <p>In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements. For instance, consider the following HTML:</p>
+  <p class="example">&lt;ul class='main-list'&gt;<br>
+  &emsp;&lt;li&gt; ... &lt;/li&gt;<br>
+  &emsp;&lt;li&gt; ... &lt;/li&gt;<br>
+  &emsp;&lt;li&gt; ... &lt;/li&gt;<br>
+    &lt;/ul&gt;</p>
+  <p>The nested &lt;li&gt; elements are selected with the following CSS:</p>
+  <p class="example">.main-list li {<br>
+<br>
+    }</p>
+  <p>In the example above, .main-list selects the .main-list element (the unordered list element). The nested &lt;li&gt; are selected by adding li to the selector, separated by a space, resulting in .main-list li as the final selector (note the space in the selector).
+
+Selecting elements in this way can make our selectors even more specific by making sure they appear in the context we expect.</p>
+  </div>
+  
+  
+</body>
+  
+  
+<footer>
+  <h2 class="smiley">&#x263A</h2> 
+</footer>
+  
+</html>

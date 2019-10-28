@@ -1,0 +1,59 @@
+body {
+  background-image: url(https://cdn.dribbble.com/users/61715/screenshots/1570276/attachments/241325/plume.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+.main-title {
+  color: MintCream;
+  font-family: Lucida Console;
+  opacity: 1;
+}
+.title {
+  color: MintCream;
+  font-family: Georgia;
+  font-size: 25px;
+  }
+.name {
+  color: MintCream;
+  font-family: Georgia;
+  font-size: 14px;
+}
+.smiley {
+  font-size: 40px;
+  color: MintCream;
+  text-align: center;
+}
+p {
+  color: MintCream;
+  font-family: Georgia;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    }
+
+.table1 {
+  background-color: snow;
+  color: black;
+  font-family: Georgia;
+  width: 45%;
+}
+.tablehead1 {
+  text-align: center;
+  font-weight: bold;
+  background-color: slategray;
+  }
+.example {
+  color: LightSteelBlue;
+  font-family: Georgia;
+}
+#Table-of-Contents {
+  text-align: center;
+  color: MidnightBlue;
+  background-color: white;
+  opacity: .5;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 18px
+}
