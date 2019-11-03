@@ -1,0 +1,41 @@
+.box {
+    height: 150px;
+    width: 150px;
+    display: inline-block; 
+    border: solid;
+    border-width: 3px;
+
+    
+}
+
+.colors {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
+.colors h2 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.red {
+    background-color: #E27D60;
+
+}
+
+.lightblue {
+    background-color: #85CCCC;
+}
+
+.orange {
+    background-color: #E8A87C;
+}
+
+.pink {
+    background-color: #C38D9E;
+}
+
+.green {
+    background-color: #41B3A3;
+}
