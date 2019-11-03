@@ -1,27 +1,48 @@
 .box {
     height: 150px;
     width: 150px;
-    display: inline-block; 
     border: solid;
     border-width: 3px;
+    display: inline-block;
+    margin: 3px;
+       
+}
 
+.box p {
+    font-family: segoe ui;
+}
+
+#colors,
+#fonts {
+    font-family: Merriweather, Georgia, serif;
+    text-align: center;
+       
+}
+.caption {
+    display: inline-block;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-family: Merriweather, Georgia, serif !important;
     
 }
 
-.colors {
-    margin: auto;
-    width: 75%;
-    text-align: center;
+#colors h2,
+#fonts h2 {
+    font-size: 50px;
+    text-align: left;
+    position: relative;
+    left: 215px;
+        
 }
 
-.colors h2 {
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#colors h4 {
+    font-weight: bold;
 }
 
 .red {
     background-color: #E27D60;
-
+        
 }
 
 .lightblue {
