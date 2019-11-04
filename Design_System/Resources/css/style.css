@@ -5,44 +5,65 @@
     border-width: 3px;
     display: inline-block;
     margin: 3px;
-       
+}
+
+hr {
+    margin-left: auto;
+    margin-right: 75%;
+    position: relative;
+    top: 7px;
 }
 
 .box p {
     font-family: segoe ui;
 }
 
-#colors,
-#fonts {
+#colors {
     font-family: Merriweather, Georgia, serif;
     text-align: center;
-       
+    }
+
+#colors h4 {
+    font-weight: bold;
 }
+
 .caption {
     display: inline-block;
     position: relative;
     top: 150px;
     text-align: center;
     font-family: Merriweather, Georgia, serif !important;
-    
 }
 
-#colors h2,
-#fonts h2 {
+#fonts h4 {
+    font-family: Merriweather;
+    font-size: 19px;
+}
+
+#fonts {
+    position: relative; 
+    left: 215px;
+    display: inline-block;
+}
+
+/* TODO: convert to table to get fonts in blocks next to each other */
+#test { 
+    display: inline-block;
+    position: relative;
+    bottom: 500px;
+    left: 400px;
+}
+
+h2 {
     font-size: 50px;
     text-align: left;
     position: relative;
     left: 215px;
-        
-}
-
-#colors h4 {
-    font-weight: bold;
+    font-family: Merriweather, Georgia, serif;
 }
 
 .red {
     background-color: #E27D60;
-        
 }
 
 .lightblue {
@@ -60,3 +81,34 @@
 .green {
     background-color: #41B3A3;
 }
+
+
+.Merriweather {
+    font-family: Merriweather;
+}
+
+.Merriweather_bold {
+    font-family: Merriweather;
+    font-weight: bold;
+}
+
+.Merriweather_italic {
+    font-family: Merriweather;
+    font-style: italic;
+}
+
+.Lora {
+    font-family: Lora;
+}
+
+.Lora_bold {
+    font-family: Lora;
+    font-weight: bold;
+}
+
+.Lora_italic {
+    font-family: Lora;
+    font-style: italic;
+}
+
+
