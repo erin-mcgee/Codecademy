@@ -132,7 +132,7 @@ table {
 
 .text_styles{
     position: relative;
-    bottom: 45px;
+    bottom: 35px;
 }
 
 #Text_Styles {
@@ -148,6 +148,7 @@ table {
     font-weight: normal;
     position: relative;
     bottom: 100px;
+    
 
 }
 
@@ -156,6 +157,7 @@ ul {
     font-family: Merriweather;
     position: relative;
     bottom: 100px;
+    
     
 }
 
