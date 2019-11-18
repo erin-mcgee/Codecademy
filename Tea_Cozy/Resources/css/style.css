@@ -4,18 +4,21 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    text-align: center;    
+    text-align: center;
+    
     
 }
 
 .header_container {    
     display: flex;
     border-bottom: 1px solid seashell;
-    justify-content: space-between;
-    position: sticky;    
+    justify-content: space-between;    
+    position: sticky;
+    top: 0px;
     height: 69px;
-    align-items: center;       
-    
+    background-color: black;
+    align-items: center;     
+    z-index: 1;      
 }
 
 #logo {
@@ -31,3 +34,53 @@ body {
     text-decoration: underline;       
         
 }
+
+.background_container {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#mission {
+    position: absolute;
+    top: 350px;
+    background-color: black;
+    width: 100%;
+}
+
+.theader_container{
+    display: flex;
+    justify-content: center;
+}
+
+#tea_header {
+    width: 1000px;
+        
+}
+
+.teas_container {
+    display: flex;        
+    flex-wrap: wrap;   
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+               
+        
+}
+
+.tea_images {
+    display: flex;
+    flex-wrap: wrap;   
+    width: 31.15%;
+    margin-top: 5px;        
+     
+}
+
+figure {
+    margin: 0px;
+}
+
+
+figcaption {
+    margin: 10px;
+}
+
