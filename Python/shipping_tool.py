@@ -29,9 +29,9 @@ def optimal_shipment(weight):
     print("Premium Shipping is cheaper than Ground Shipping and Premium Shipping." + " It will cost $" + str(premium_shipping) + ".")
   
 
-print(optimal_shipment(4.8))
+optimal_shipment(4.8)
 
-print(optimal_shipment(41.5))
+optimal_shipment(41.5)
 
 
   
