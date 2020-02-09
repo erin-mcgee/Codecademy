@@ -4,17 +4,6 @@ money = 100
 
 #integer = random.randint(1, 10)
 
-#Create a function that simulates flipping a coin and calling either "Heads" or "Tails".
-#This function (along with all of the other functions you will write in this project) 
-#should have a parameter that represents how much the player is betting on the coin flip.
-
-#This function should also have a parameter that lets the player call either "Heads" or "Tails".
-
-#If the player wins the game, the function should return the 
-#amount that they won. If the player loses the game, the function should return the amount that they lost as a negative number.
-
-#Write your game of chance functions here
-
 #Coin Flip Game
 player_money = money
  
