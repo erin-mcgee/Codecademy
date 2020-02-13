@@ -6,26 +6,26 @@ player_money = money
 #integer = random.randint(1, 10)
 
 #Coin Flip Game 
-"""def coin_flip(bet, guess):
-   flip=random.randint(1,2)  
+def coin_flip(bet, guess):
+    flip=random.randint(1,2)
     if flip==1 and guess=="heads":
         print("Heads! You win: $" + str(bet))
         return bet
-   elif flip==2 and guess=="tails":
-       print("Tails! You win: $" + str(bet))
-       return bet
+    elif flip==2 and guess=="tails":
+        print("Tails! You win: $" + str(bet))
+        return bet
     elif flip==1 and guess=="tails":
         print("Heads... You lose: $" + str(bet))
         return -bet
     elif flip==2 and guess=="heads":
         print("Tails... You lose: $" + str(bet))
-        return -bet"""
+        return -bet
 
 #Cho-Han Game
-"""def cho_han(guess, bet):
-   roll_1=random.randint(1,6)
-   roll_2=random.randint(1,6)
-   sum_roll=roll_1+roll_2
+def cho_han(guess, bet):
+    roll_1=random.randint(1,6)
+    roll_2=random.randint(1,6)
+    sum_roll=roll_1+roll_2
     print("Roll 1= " + str(roll_1))
     print("Roll 2= " + str(roll_2))
     print("The sum of the roll= " + str(sum_roll))
@@ -40,7 +40,7 @@ player_money = money
         return -bet
     elif sum_roll%2!=0 and (guess=="Even" or guess=="even"):
         print("Loser :(")
-        return -bet"""
+        return -bet
     
 #Deck of Cards Game
 colors = ["heart", "diamonds", "spades", "clubs"]
@@ -67,28 +67,30 @@ def deck_game(player_1_bet):
     else:
         print("Player 2 wins")
         return -player_1_bet
-    
+
+#Roulette Game
+def roulette(guess, bet):
+    spin=random.randint(0, 36)
+    print("The ball landed on: "+ str(spin))
+    if guess==spin:
+        print("Your guess was the spin!")
+        return bet+35
+    elif spin%2==0 and (guess=="Even" or guess=="even"):
+        print("The spin was an even number! You win!")
+        return bet
+    elif spin%2!=0 and (guess=="Odd" or guess=="odd"):
+        print("The spin was odd. You win!")
+        return bet
+    else:
+        print("You lose.")
+        return -bet
+
+   
 
 #Call your game of chance functions here
-while True:
-    print("Enter your $$:")
-    player_1_bet=input()
-    if int(player_1_bet) > player_money:
-        print("You no have money why")
-        continue
-    if player_1_bet=="Stop":
-        break
-    player_money += deck_game(int(player_1_bet))
-    if player_money<=0:
-        print("You lost all ur coin brother")
-        break
-    print("You now have: $" + str(player_money))
-
-
-
 
 #Call Coin Flip Game:
-"""while True:
+while True:
     print("Enter your monetary bet:")
     bet=input()
     if int(bet) > player_money:
@@ -102,10 +104,10 @@ while True:
     if player_money<=0:
         print("You have lost all your money :( GG")
         break
-    print("You now have: $" + str(player_money))"""
+    print("You now have: $" + str(player_money))
 
 #Call Cho-Han Game:
-"""while True:
+while True:
     print("Enter your monetary bet:")
     bet=input()
     if int(bet) > player_money:
@@ -118,4 +120,36 @@ while True:
     if player_money<=0:
         print("You have no more money. Byebye.")
         break
-    print("You now have: $" + str(player_money))"""
+    print("You now have: $" + str(player_money))
+
+#Call Deck of Cards Game:
+while True:
+    print("Enter your $$:")
+    player_1_bet=input()
+    if int(player_1_bet) > player_money:
+        print("You no have money why")
+        continue
+    if player_1_bet=="Stop":
+        break
+    player_money += deck_game(int(player_1_bet))
+    if player_money<=0:
+        print("You lost all ur coin brother")
+        break
+    print("You now have: $" + str(player_money))    
+
+#Call Roulette Game:
+while True:
+    print("Enter your bet:")
+    bet=input()
+    if int(bet) > player_money:
+        print("You don't have enough money to make that bet")
+        continue
+    if bet=="Stop":
+        break
+    print("Enter your guess:")
+    guess=input()
+    player_money += roulette(guess, int(bet))
+    if player_money<=0:
+        print("You lost all ur moneys")
+        break
+    print("You now have: $" + str(player_money))    
